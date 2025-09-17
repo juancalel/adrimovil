@@ -1,0 +1,41 @@
+@host = http://localhost:4000/v1
+POST {{host}}/auth/login
+Content-Type: application/json
+
+{
+    "email": "juan.perez@example.com",
+    "password": "password123"
+}
+
+### registrar usuario
+POST {{host}}/auth/register
+Content-Type: application/json
+
+{
+    "nombres": "Juan",
+    "apellidos": "Pérez",
+    "email": "juan.perez@example.com",
+    "password": "password123",
+    "tipo_usuario": 2
+}
+
+### listar usuarios
+GET {{host}}/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTgwOTUwNjgsImV4cCI6MTc1OTg1Njc2MzM0MH0.AfZB1D_0pqstrKMFhpVGq9lYxdicWWz0WJCjznC2Bw8
+
+### crear un nuevo formulario
+POST {{host}}/form
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTgwOTUwNjgsImV4cCI6MTc1OTg1Njc2MzM0MH0.AfZB1D_0pqstrKMFhpVGq9lYxdicWWz0WJCjznC2Bw8
+
+{
+    "nombre": "SEFIC",
+    "descripcion": "Formulario para medir la satisfacción del cliente",
+    "creado_por": 1
+}
+
+### listar formularios
+GET {{host}}/form/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTgwOTUwNjgsImV4cCI6MTc1OTg1Njc2MzM0MH0.AfZB1D_0pqstrKMFhpVGq9lYxdicWWz0WJCjznC2Bw8
