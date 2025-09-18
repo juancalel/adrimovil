@@ -30,8 +30,8 @@ Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTgwOTUwNjgsImV4cCI6MTc1OTg1Njc2MzM0MH0.AfZB1D_0pqstrKMFhpVGq9lYxdicWWz0WJCjznC2Bw8
 
 {
-    "nombre": "SEFIC",
-    "descripcion": "Formulario para medir la satisfacción del cliente",
+    "nombre": "Monitoreo ADRI SEFIC",
+    "descripcion": "Formulario para el monitoreo de ADRI SEFIC",
     "creado_por": 1
 }
 
@@ -39,3 +39,14 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpb
 GET {{host}}/form/2
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTgwOTUwNjgsImV4cCI6MTc1OTg1Njc2MzM0MH0.AfZB1D_0pqstrKMFhpVGq9lYxdicWWz0WJCjznC2Bw8
+
+### Actualizar formulario
+PUT {{host}}/form/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Imp1YW4ucGVyZXpAZXhhbXBsZS5jb20iLCJpYXQiOjE3NTgwOTUwNjgsImV4cCI6MTc1OTg1Njc2MzM0MH0.AfZB1D_0pqstrKMFhpVGq9lYxdicWWz0WJCjznC2Bw8
+
+{
+    "nombre": "Ficha Socioeconómica",
+    "descripcion": "Formulario el estudio socioeconómico",
+    "creado_por": 1
+}
