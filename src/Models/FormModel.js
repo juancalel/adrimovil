@@ -29,7 +29,7 @@ export class FormModel {
     }
     static async createForm({ input }) {
         const { nombre, descripcion = '', creado_por } = input;
-        return connection.one('INSERT INTO formularios (nombre, descripcion, creado_por)  VALUES ($1, $2, $3) RETURNING id_formulario', [nombre, descripcion, creado_por])
+        return connection.one('INSERT INTO formularios (nombre, descripcion, creado_por)  VALUES ($1, $2, $3) RETURNING id', [nombre, descripcion, creado_por])
             .then(result => {
                 return { success: true, data: result }
             })
